@@ -44,7 +44,7 @@ void TOK::paint_plane( uint8_t*      plane,
 	assert( center_y < ny );
 	assert( b != 0 );
 
-	int nbytes = b->h_neg() + b->v_pos() + 1;
+	int nbytes = b->h_neg() + b->h_pos() + 1;
 
 	for ( int ir = - b->v_neg(); ir <= b->v_pos(); ++ir ) // loop over rows
 	{
